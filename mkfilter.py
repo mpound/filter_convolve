@@ -37,7 +37,8 @@ from astropy import units as u
 import numpy as np
 
 # Customize directories as necessary
-sedfit_base_dir = '/n/lupus3/mpound/filter_convolve'
+#sedfit_base_dir = '/n/lupus3/mpound/filter_convolve'
+sedfit_base_dir = '/subaruraid/mpound/sedfittermodels'
 model_dir       = sedfit_base_dir+"/models_r17/"
 base_dir        = '/n/lupus3/mpound/YSOproject'
 # relative directory in this repository
@@ -56,21 +57,24 @@ import matplotlib.pyplot as plt
 models = ["s-pbhmi", "s-pbsmi", "s-p-hmi", "sp--hmi", 
           "s-p-smi", "sp--smi", "spubsmi", "s---s-i", 
           "s---smi", "s-ubsmi", "s-u-hmi" ]
-models = [ "s---s-i"]
+#models = [ "s---s-i"]
          
 
 # Note we use GAIA 2nd Data release filter shapes
 filter_info = [
-#("GAIA-GAIA2r.G.dat",fm.GAIA_G),
-#("GAIA-GAIA2r.Gbp.dat",fm.GAIA_B),
-#("GAIA-GAIA2r.Grp.dat",fm.GAIA_R),
-("SLOAN-SDSS.u.dat",fm.SDSS_u),
-("SLOAN-SDSS.g.dat",fm.SDSS_g),
+("GAIA-GAIA2r.G.dat",fm.GAIA_G2r),
+("GAIA-GAIA2r.Gbp.dat",fm.GAIA_B2r),
+("GAIA-GAIA2r.Grp.dat",fm.GAIA_R2r),
+("GAIA-GAIA2.G.dat",fm.GAIA_G2),
+("GAIA-GAIA2.Gbp.dat",fm.GAIA_B2),
+("GAIA-GAIA2.Grp.dat",fm.GAIA_R2),
+#("SLOAN-SDSS.u.dat",fm.SDSS_u),
+#("SLOAN-SDSS.g.dat",fm.SDSS_g),
 #("Generic-Bessell.V.dat",fm.BESSELL_V),
 #("WISE-WISE.W1.dat",fm.WISE1),
-("SLOAN-SDSS.r.dat",fm.SDSS_r),
-("SLOAN-SDSS.i.dat",fm.SDSS_i),
-("SLOAN-SDSS.z.dat",fm.SDSS_z),
+#("SLOAN-SDSS.r.dat",fm.SDSS_r),
+#("SLOAN-SDSS.i.dat",fm.SDSS_i),
+#("SLOAN-SDSS.z.dat",fm.SDSS_z),
 ]
 
 do_plot=False

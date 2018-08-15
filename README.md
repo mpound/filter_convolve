@@ -16,7 +16,8 @@ http://wise2.ipac.caltech.edu/docs/release/prelim/expsup/sec4_3g.html#WISEZMA
 
 SLOAN
 http://classic.sdss.org/dr7/instruments/imager/index.html
-http://classic.sdss.org/dr7/algorithms/fluxcal.htmlo
+
+http://classic.sdss.org/dr7/algorithms/fluxcal.html
 
 HERSCHEL
 
